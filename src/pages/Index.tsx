@@ -35,65 +35,64 @@ const Index = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div ref={cardRef} className="space-y-8">
             <Card className="relative overflow-hidden shadow-2xl rounded-lg" style={{ width: '360px', height: '200px', margin: '0 auto' }}>
-              <div className="absolute inset-0 bg-gradient-to-br from-[#1e3a8a] via-[#1e40af] to-[#1e3a8a]"></div>
+              <div className="absolute inset-0 bg-white"></div>
               
-              <div className="absolute top-0 right-0 opacity-10">
-                <Icon name="Scale" size={120} className="text-[#d4af37]" />
+              <div className="absolute left-0 top-0 bottom-0 w-[140px]">
+                <img 
+                  src="https://cdn.poehali.dev/files/7ec50343-48ec-495a-a5a1-3d42ee289862.png" 
+                  alt="Вера Борисовна"
+                  className="w-full h-full object-cover"
+                  style={{ objectPosition: 'center' }}
+                />
               </div>
               
-              <div className="relative h-full p-6 flex flex-col justify-between text-white">
-                <div>
-                  <div className="flex items-center gap-2 mb-4">
-                    <Icon name="Gavel" size={24} className="text-[#d4af37]" />
-                    <span className="text-[#d4af37] text-sm font-medium tracking-wider">ЮРИДИЧЕСКИЕ УСЛУГИ</span>
-                  </div>
-                  
-                  <h2 className="text-2xl font-bold mb-1" style={{ fontFamily: 'Cormorant, serif' }}>
-                    Вера Борисовна
-                  </h2>
-                  <p className="text-sm text-blue-200">Помощник юриста</p>
+              <div className="absolute right-0 top-0 bottom-0" style={{ width: '220px', background: 'linear-gradient(135deg, #f5e6d3 0%, #e8d4b8 100%)' }}>
+                <div className="absolute top-4 right-4 opacity-20">
+                  <img 
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 140'%3E%3Cpath fill='%23c19a5b' d='M60 10 L70 40 L100 40 L75 60 L85 90 L60 70 L35 90 L45 60 L20 40 L50 40 Z M60 0 L50 20 L70 20 Z M30 50 L40 70 L50 60 Z M70 60 L80 70 L90 50 Z M45 100 L55 120 L60 110 Z M65 110 L75 120 L65 100 Z'/%3E%3C/svg%3E" 
+                    alt="Герб"
+                    style={{ width: '80px', height: '95px' }}
+                  />
                 </div>
+                
+                <div className="relative h-full p-4 flex flex-col justify-between">
+                  <div className="pt-2">
+                    <h2 className="text-xl font-bold mb-1 text-[#8B4513]" style={{ fontFamily: 'Cormorant, serif' }}>
+                      Вера Борисовна
+                    </h2>
+                    <p className="text-xs text-[#8B4513]/80 italic" style={{ fontFamily: 'Cormorant, serif' }}>Помощник юриста</p>
+                  </div>
 
-                <div className="space-y-1.5 text-sm">
-                  <div className="flex items-center gap-2">
-                    <Icon name="Phone" size={14} className="text-[#d4af37]" />
-                    <span>+79968742025</span>
+                  <div className="space-y-1 text-xs text-[#8B4513]">
+                    <div>тел. +79968742025</div>
                   </div>
                 </div>
               </div>
             </Card>
 
-            <Card className="relative overflow-hidden shadow-2xl rounded-lg" style={{ width: '360px', height: '200px', margin: '0 auto' }}>
-              <div className="absolute inset-0 bg-white"></div>
+            <Card className="relative overflow-hidden shadow-2xl rounded-lg" style={{ width: '360px', height: '200px', margin: '0 auto', background: 'linear-gradient(135deg, #f5e6d3 0%, #e8d4b8 100%)' }}>
+              <div className="absolute top-0 left-0 right-0 flex justify-center pt-4">
+                <img 
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 140'%3E%3Cpath fill='%23c19a5b' d='M60 10 L70 40 L100 40 L75 60 L85 90 L60 70 L35 90 L45 60 L20 40 L50 40 Z M60 0 L50 20 L70 20 Z M30 50 L40 70 L50 60 Z M70 60 L80 70 L90 50 Z M45 100 L55 120 L60 110 Z M65 110 L75 120 L65 100 Z'/%3E%3Ctext x='60' y='130' text-anchor='middle' font-size='8' fill='%23c19a5b'%3EРОССИЙСКАЯ ФЕДЕРАЦИЯ%3C/text%3E%3C/svg%3E" 
+                  alt="Герб России"
+                  style={{ width: '60px', height: '70px' }}
+                />
+              </div>
               
-              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1e3a8a]/5 to-transparent"></div>
-              
-              <div className="relative h-full p-6 flex flex-col justify-between">
-                <div className="flex items-center justify-center mb-4">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#1e3a8a] to-[#1e40af] flex items-center justify-center">
-                    <Icon name="Scale" size={32} className="text-[#d4af37]" />
-                  </div>
-                </div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-24 h-1 bg-[#c19a5b]/30"></div>
+              </div>
 
-                <div className="space-y-2 text-slate-700">
-                  <div className="flex items-start gap-2 text-sm">
-                    <Icon name="MapPin" size={16} className="text-[#1e3a8a] mt-0.5 flex-shrink-0" />
-                    <span>г. Москва, ул. Правды, д. 24, офис 301</span>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-center text-[#8B4513]">
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-center justify-center gap-2">
+                    <Icon name="MapPin" size={14} className="text-[#c19a5b]" />
+                    <span>Москва</span>
                   </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <Icon name="Globe" size={16} className="text-[#1e3a8a] flex-shrink-0" />
-                    <span>www.legal-consult.ru</span>
+                  <div className="flex items-center justify-center gap-2">
+                    <Icon name="Scale" size={14} className="text-[#c19a5b]" />
+                    <span className="italic" style={{ fontFamily: 'Cormorant, serif' }}>Профессиональная юридическая помощь</span>
                   </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <Icon name="Clock" size={16} className="text-[#1e3a8a] flex-shrink-0" />
-                    <span>Пн-Пт: 9:00 - 18:00</span>
-                  </div>
-                </div>
-
-                <div className="text-center pt-2 border-t border-slate-200">
-                  <p className="text-xs text-slate-500 italic" style={{ fontFamily: 'Cormorant, serif' }}>
-                    Юридическая помощь с 2010 года
-                  </p>
                 </div>
               </div>
             </Card>
