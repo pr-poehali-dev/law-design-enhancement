@@ -35,36 +35,38 @@ const Index = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div ref={cardRef} className="space-y-8">
             <Card className="relative overflow-hidden shadow-2xl rounded-lg" style={{ width: '360px', height: '200px', margin: '0 auto' }}>
-              <div className="absolute inset-0 bg-white"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#1e3a8a] via-[#1e40af] to-[#1e3a8a]"></div>
               
-              <div className="absolute left-0 top-0 bottom-0 w-[140px]">
+              <div className="absolute left-0 top-0 bottom-0 w-[120px]">
                 <img 
-                  src="https://cdn.poehali.dev/files/7ec50343-48ec-495a-a5a1-3d42ee289862.png" 
+                  src="https://cdn.poehali.dev/files/d45fd8cd-320a-4c12-bba0-ee96a8c510ad.jpeg" 
                   alt="Вера Борисовна"
                   className="w-full h-full object-cover"
                   style={{ objectPosition: 'center' }}
                 />
               </div>
               
-              <div className="absolute right-0 top-0 bottom-0" style={{ width: '220px', background: 'linear-gradient(135deg, #f5e6d3 0%, #e8d4b8 100%)' }}>
-                <div className="absolute top-4 right-4 opacity-20">
-                  <img 
-                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 140'%3E%3Cpath fill='%23c19a5b' d='M60 10 L70 40 L100 40 L75 60 L85 90 L60 70 L35 90 L45 60 L20 40 L50 40 Z M60 0 L50 20 L70 20 Z M30 50 L40 70 L50 60 Z M70 60 L80 70 L90 50 Z M45 100 L55 120 L60 110 Z M65 110 L75 120 L65 100 Z'/%3E%3C/svg%3E" 
-                    alt="Герб"
-                    style={{ width: '80px', height: '95px' }}
-                  />
-                </div>
-                
-                <div className="relative h-full p-4 flex flex-col justify-between">
-                  <div className="pt-2">
-                    <h2 className="text-xl font-bold mb-1 text-[#8B4513]" style={{ fontFamily: 'Cormorant, serif' }}>
-                      Вера Борисовна
-                    </h2>
-                    <p className="text-xs text-[#8B4513]/80 italic" style={{ fontFamily: 'Cormorant, serif' }}>Помощник юриста</p>
+              <div className="absolute top-0 right-0 opacity-10">
+                <Icon name="Scale" size={100} className="text-[#d4af37]" />
+              </div>
+              
+              <div className="absolute right-0 top-0 bottom-0 left-[120px] p-5 flex flex-col justify-between text-white">
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <Icon name="Gavel" size={20} className="text-[#d4af37]" />
+                    <span className="text-[#d4af37] text-xs font-medium tracking-wider">ЮРИДИЧЕСКИЕ УСЛУГИ</span>
                   </div>
+                  
+                  <h2 className="text-xl font-bold mb-1" style={{ fontFamily: 'Cormorant, serif' }}>
+                    Вера Борисовна
+                  </h2>
+                  <p className="text-xs text-blue-200">Помощник юриста</p>
+                </div>
 
-                  <div className="space-y-1 text-xs text-[#8B4513]">
-                    <div>тел. +79968742025</div>
+                <div className="space-y-1.5 text-xs">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Phone" size={12} className="text-[#d4af37]" />
+                    <span>+79968742025</span>
                   </div>
                 </div>
               </div>
