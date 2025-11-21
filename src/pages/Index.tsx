@@ -57,11 +57,7 @@ const Index = () => {
                 <div className="space-y-1.5 text-sm">
                   <div className="flex items-center gap-2">
                     <Icon name="Phone" size={14} className="text-[#d4af37]" />
-                    <span>+7 996 874 20 25</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Icon name="Mail" size={14} className="text-[#d4af37]" />
-                    <span>vera@legal-consult.ru</span>
+                    <span>+79968742025</span>
                   </div>
                 </div>
               </div>
